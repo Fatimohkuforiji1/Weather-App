@@ -20,8 +20,7 @@ window.addEventListener("load", ()=>{
         .then(response =>{
         return response.json();
     })
-    
-        .then(data =>{ 
+           .then(data =>{ 
          const {temp,feels_like} = data.main;
          const {icon, description} = data.weather[0];
         //set DOM Elements from the API
